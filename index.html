@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .wrap{
+      width: 400px;
+      border: solid 2px black;
+      
+
+    }
+    .content{
+      margin-left: 50px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="content">
+      <form action="submit">
+        <input data-input="cep" type="text">
+        <button data-btn="enviar">Buscar</button>
+      </form>
+      <p>Status da requisição: <span data-status="status"></span></p>
+      <section data-name="endereco">
+        
+        <p>Logradouro: <span data-end="log"></span></p>
+        <p>Bairro: <span data-end="bairro"></span></p>
+        <p>Estado: <span data-end="estado"></span></p>
+        <p>Cidade: <span data-end="cidade"></span></p>
+        <p>CEP: <span data-end="cep"></span></p>
+      </section>
+    </div>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
