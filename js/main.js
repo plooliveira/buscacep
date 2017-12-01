@@ -83,13 +83,12 @@
   //--------------------------------------------------------------------------
   
   
-  
    
   var ajax = new XMLHttpRequest();
   var $input = new DOM('[data-input="cep"]');
   var $enviar = new DOM('[data-btn="enviar"]');
   var $status = new DOM('[data-status="status"]')
-  
+  var $endereco = new DOM('[data-end]');
   
 
   // Função que limpa o cep digitado deixando apenas numeros
@@ -102,7 +101,7 @@
   }
   //função que seta os valores dos campos no documento de acordo com a busca.
   function setDisplay(obj){
-    var $endereco = new DOM('[data-end]');
+    
     $endereco.get()[0].textContent = obj.logradouro;
     $endereco.get()[1].textContent = obj.bairro;
     $endereco.get()[2].textContent = obj.uf;
